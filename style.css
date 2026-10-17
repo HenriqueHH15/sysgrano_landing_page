@@ -6,6 +6,8 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* ==================== HEADER ==================== */
+
 header{
     background-color: #e1d3c1;
     height: 20px;
@@ -55,4 +57,32 @@ header img{
     text-decoration-line: underline; 
     color: #36471F;
     font-size: 3.5px;
+}
+
+/* ==================== FOOTER ==================== */
+
+footer{
+    background-color: #e1d3c1;
+    height: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    font-size: 4px;
+    margin: 0 auto;
+    padding-left: 60px;
+    color: #3e3b37;
+}
+
+footer a{
+    margin-left: auto;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a img{
+    height: 5px;
 }
