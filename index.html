@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/logo_sem_nome_4x4.png" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -26,7 +28,84 @@
         <section class="hero" id="hero">hero</section>
         <section class="recursos" id="recursos">recursos</section>
         <section class="porque" id="porque">porque</section>
-        <section class="parcerias" id="parcerias">parcerias</section>
+        <section class="parcerias" id="parcerias" aria-labelledby="partners-title">
+            <div class="partners__container">
+
+                <header class="partners__header">
+                    <span class="partners__eyebrow">Parcerias</span>
+                    <h2 class="partners__title" id="partners-title">Quem caminha com a gente</h2>
+                    <p class="partners__subtitle">
+                        Conheça as organizações que acreditam no projeto e ajudam a torná-lo possível.
+                    </p>
+                </header>
+
+                <ul class="partners__grid">
+
+                    <!-- Para usar a logo: troque o <span class="partner__placeholder"> pelo <img src="logo.png" alt="Logo da Parceria"> -->
+                    <li class="partner">
+                        <a href="#" class="partner__link" aria-label="Visitar site da Parceria 1">
+                            <div class="partner__logo">
+                                <span class="partner__placeholder" aria-hidden="true">LOGO</span>
+                            </div>
+                            <h3 class="partner__name">Nome da Parceria 1</h3>
+                            <p class="partner__desc">Breve descrição da parceria.</p>
+                        </a>
+                    </li>
+
+                    <li class="partner">
+                        <a href="#" class="partner__link" aria-label="Visitar site da Parceria 2">
+                            <div class="partner__logo">
+                                <span class="partner__placeholder" aria-hidden="true">LOGO</span>
+                            </div>
+                            <h3 class="partner__name">Nome da Parceria 2</h3>
+                            <p class="partner__desc">Breve descrição da parceria.</p>
+                        </a>
+                    </li>
+
+                    <li class="partner">
+                        <a href="#" class="partner__link" aria-label="Visitar site da Parceria 3">
+                            <div class="partner__logo">
+                                <span class="partner__placeholder" aria-hidden="true">LOGO</span>
+                            </div>
+                            <h3 class="partner__name">Nome da Parceria 3</h3>
+                            <p class="partner__desc">Breve descrição da parceria.</p>
+                        </a>
+                    </li>
+
+                    <li class="partner">
+                        <a href="#" class="partner__link" aria-label="Visitar site da Parceria 4">
+                            <div class="partner__logo">
+                                <span class="partner__placeholder" aria-hidden="true">LOGO</span>
+                            </div>
+                            <h3 class="partner__name">Nome da Parceria 4</h3>
+                            <p class="partner__desc">Breve descrição da parceria.</p>
+                        </a>
+                    </li>
+
+                    <li class="partner">
+                        <a href="#" class="partner__link" aria-label="Visitar site da Parceria 5">
+                            <div class="partner__logo">
+                                <span class="partner__placeholder" aria-hidden="true">LOGO</span>
+                            </div>
+                            <h3 class="partner__name">Nome da Parceria 5</h3>
+                            <p class="partner__desc">Breve descrição da parceria.</p>
+                        </a>
+                    </li>
+
+                    <li class="partner">
+                        <a href="#" class="partner__link" aria-label="Visitar site da Parceria 6">
+                            <div class="partner__logo">
+                                <span class="partner__placeholder" aria-hidden="true">LOGO</span>
+                            </div>
+                            <h3 class="partner__name">Nome da Parceria 6</h3>
+                            <p class="partner__desc">Breve descrição da parceria.</p>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
         <section class="download" id="download">download</section>
         <section class="manual" id="manual">manual</section>
     </main>
@@ -39,4 +118,5 @@
         </a>
     </footer>
 </body>
+
 </html>
