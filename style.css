@@ -24,7 +24,7 @@
 
 header{
     background-color: var(--bege);
-    height: 20px;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@ header{
 }
 
 header img{
-    height: 10px;
+    height: 40px;
     padding: 2px;
 }
 
@@ -40,7 +40,7 @@ header img{
     display: flex;
     align-items: center;
     font-weight: 900;
-    font-size: 8px;
+    font-size: 20px;
 }
 
 .logo p{
@@ -52,25 +52,25 @@ header img{
 }
 
 .menu{
-    font-size: 3px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
 }
 
 .menu a{
-    padding: 2px;
+    padding: 8px;
     text-decoration: none;
     font-weight: 500;
     color: var(--grafite);
-    transition:ease;
+    transition: ease;
     transition-duration: 0.5s;
 }
 
 .menu a:hover{
     text-decoration-line: underline; 
     color: #36471F;
-    font-size: 3.5px;
+    font-size: 15.5px;
 }
 
 /* ==================== PARCERIAS ==================== */
@@ -121,8 +121,10 @@ header img{
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  /*grid-template-columns: repeat(2, 1fr); caso tenha 3 ou mais parcerias*/
+  grid-template-columns: 1fr 1fr;
+  /*gap: 1rem; caso tenha 3 ou mais parcerias*/
+  gap: 20px;
 }
 
 .partner__link {
@@ -174,13 +176,6 @@ header img{
   object-fit: contain;
 }
 
-.partner__placeholder {
-  color: var(--verde);
-  font-weight: 700;
-  letter-spacing: .15em;
-  font-size: .9rem;
-}
-
 .partner__name {
   margin: 0 0 .3rem;
   font-size: 1.05rem;
@@ -215,7 +210,7 @@ header img{
 footer{
     background-color: var(--bege);
     color: var(--grafite);
-    height: 15px;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -224,7 +219,7 @@ footer{
 }
 
 footer p{
-    font-size: 4px
+    font-size: 15px;
 }
 
 footer a{
@@ -233,5 +228,5 @@ footer a{
 }
 
 footer a img{
-    height: 5px;
+    height: 20px;
 }
