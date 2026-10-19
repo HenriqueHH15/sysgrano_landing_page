@@ -63,22 +63,20 @@ header img{
 
 footer{
     background-color: #e1d3c1;
+    color: #3e3b37;
     height: 15px;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
 }
 
 footer p{
-    font-size: 4px;
-    margin: 0 auto;
-    padding-left: 60px;
-    color: #3e3b37;
+    font-size: 4px
 }
 
 footer a{
-    margin-left: auto;
-    padding-right: 10px;
     display: flex;
     justify-content: center;
 }
