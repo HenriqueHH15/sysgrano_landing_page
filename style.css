@@ -285,7 +285,9 @@ header img{
 #s3:checked ~ .carousel__viewport .slide:nth-child(3),
 #s4:checked ~ .carousel__viewport .slide:nth-child(4),
 #s5:checked ~ .carousel__viewport .slide:nth-child(5),
-#s6:checked ~ .carousel__viewport .slide:nth-child(6) {
+#s6:checked ~ .carousel__viewport .slide:nth-child(6),
+#s7:checked ~ .carousel__viewport .slide:nth-child(7),
+#s8:checked ~ .carousel__viewport .slide:nth-child(8) {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
@@ -297,7 +299,9 @@ header img{
 #s3:checked ~ .carousel__dots label:nth-child(3),
 #s4:checked ~ .carousel__dots label:nth-child(4),
 #s5:checked ~ .carousel__dots label:nth-child(5),
-#s6:checked ~ .carousel__dots label:nth-child(6) {
+#s6:checked ~ .carousel__dots label:nth-child(6),
+#s7:checked ~ .carousel__dots label:nth-child(7),
+#s8:checked ~ .carousel__dots label:nth-child(8) {
   width: 34px;
   background: var(--rosa);
   opacity: 1;
@@ -310,7 +314,7 @@ header img{
 
 @media (min-width: 900px) {
   .slide {
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 240px 1fr;
     gap: clamp(2.5rem, 6vw, 5rem);
     padding: 3rem clamp(2rem, 5vw, 4rem);
   }

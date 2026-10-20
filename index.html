@@ -39,15 +39,6 @@
                         <h2 class="showcase__title" id="showcase-title">Algumas Telas do Aplicativo</h2>
                     </div>
 
-                    <!--
-        ================= COMO ADICIONAR UM SLIDE =================
-        1) Copie um <input> e cole junto dos outros (com id novo: s5, s6...).
-        2) Copie um <li class="slide"> e ajuste o número, os textos e os
-           "for" dos botões (anterior e próximo).
-        3) Copie um <label> dos pontinhos (for="s5", etc.).
-        O CSS já está preparado para até 6 slides.
-        Para o primeiro slide aparecer ao abrir, deixe "checked" só no s1.
-      -->
                     <div class="carousel" role="group" aria-roledescription="carrossel" aria-label="Destaques">
 
                         <!-- Controles (inputs ocultos que guardam qual slide está ativo) -->
@@ -55,6 +46,10 @@
                         <input class="carousel__input" type="radio" name="slides" id="s2" aria-label="Slide 2">
                         <input class="carousel__input" type="radio" name="slides" id="s3" aria-label="Slide 3">
                         <input class="carousel__input" type="radio" name="slides" id="s4" aria-label="Slide 4">
+                        <input class="carousel__input" type="radio" name="slides" id="s5" aria-label="Slide 5">
+                        <input class="carousel__input" type="radio" name="slides" id="s6" aria-label="Slide 6">
+                        <input class="carousel__input" type="radio" name="slides" id="s7" aria-label="Slide 7">
+                        <input class="carousel__input" type="radio" name="slides" id="s8" aria-label="Slide 8">
 
                         <!-- Slides -->
                         <div class="carousel__viewport">
@@ -63,20 +58,20 @@
                                 <!-- ===== Slide 1 ===== -->
                                 <li class="slide">
                                     <div class="slide__media">
-                                        <!-- Troque o placeholder por: <img src="sua-imagem.jpg" alt="Descrição da imagem"> -->
-                                        <span class="slide__placeholder" aria-hidden="true">IMAGEM<br>vertical</span>
+                                        <img src="./assets/appHome-3.jpeg"
+                                            alt="Print da tela Home do aplicativo Sysgrano">
                                     </div>
 
                                     <div class="slide__content">
-                                        <span class="slide__counter">01 / 04</span>
-                                        <h3 class="slide__title">Título do destaque 1</h3>
+                                        <span class="slide__counter">01 / 08</span>
+                                        <h3 class="slide__title">Cadastro de Propriedade</h3>
                                         <p class="slide__text">
-                                            Escreva aqui uma descrição curta do destaque. Duas ou três frases já
-                                            são suficientes para apresentar a ideia.
+                                            Cadastre sua propriedade no app para gerir talhões, safras e atividades.
+                                            Fique de olho na previsão do tempo diretamente na página inicial.
                                         </p>
 
                                         <div class="slide__controls">
-                                            <label for="s4" class="nav nav--prev">
+                                            <label for="s8" class="nav nav--prev">
                                                 <span class="sr-only">Slide anterior</span>
                                                 <svg viewBox="0 0 24 24" aria-hidden="true">
                                                     <path d="M15 5l-7 7 7 7" />
@@ -95,15 +90,16 @@
                                 <!-- ===== Slide 2 ===== -->
                                 <li class="slide">
                                     <div class="slide__media">
-                                        <span class="slide__placeholder" aria-hidden="true">IMAGEM<br>vertical</span>
+                                        <img src="./assets/appHome-2.jpeg"
+                                            alt="Print da página home do aplicativo Sysgrano">
                                     </div>
 
                                     <div class="slide__content">
-                                        <span class="slide__counter">02 / 04</span>
-                                        <h3 class="slide__title">Título do destaque 2</h3>
+                                        <span class="slide__counter">02 / 08</span>
+                                        <h3 class="slide__title">Cotação do Café</h3>
                                         <p class="slide__text">
-                                            Escreva aqui uma descrição curta do destaque. Duas ou três frases já
-                                            são suficientes para apresentar a ideia.
+                                            Fique por dentro do preço do café em tempo real pelo tipo de café e por
+                                            saca.
                                         </p>
 
                                         <div class="slide__controls">
@@ -126,15 +122,16 @@
                                 <!-- ===== Slide 3 ===== -->
                                 <li class="slide">
                                     <div class="slide__media">
-                                        <span class="slide__placeholder" aria-hidden="true">IMAGEM<br>vertical</span>
+                                        <img src="./assets/appEvento-1.jpeg"
+                                            alt="Print da tela de evento do aplicativo Sysgrano">
                                     </div>
 
                                     <div class="slide__content">
-                                        <span class="slide__counter">03 / 04</span>
-                                        <h3 class="slide__title">Título do destaque 3</h3>
+                                        <span class="slide__counter">03 / 08</span>
+                                        <h3 class="slide__title">Agende Atividades no Calendário</h3>
                                         <p class="slide__text">
-                                            Escreva aqui uma descrição curta do destaque. Duas ou três frases já
-                                            são suficientes para apresentar a ideia.
+                                            Cadastre as atividades que planeja realizar em um talhão no calendário e
+                                            salve todas as informações que precisa.
                                         </p>
 
                                         <div class="slide__controls">
@@ -157,19 +154,146 @@
                                 <!-- ===== Slide 4 ===== -->
                                 <li class="slide">
                                     <div class="slide__media">
-                                        <span class="slide__placeholder" aria-hidden="true">IMAGEM<br>vertical</span>
+                                        <img src="./assets/appEvento-2.jpeg"
+                                            alt="Print da aba de atividades do aplicativo Sysgrano">
                                     </div>
 
                                     <div class="slide__content">
-                                        <span class="slide__counter">04 / 04</span>
-                                        <h3 class="slide__title">Título do destaque 4</h3>
+                                        <span class="slide__counter">04 / 08</span>
+                                        <h3 class="slide__title">Atividades a Realizar</h3>
                                         <p class="slide__text">
-                                            Escreva aqui uma descrição curta do destaque. Duas ou três frases já
-                                            são suficientes para apresentar a ideia.
+                                            Encontre todas as atividades que devem ser feitas em determinado dia em um
+                                            só lugar. Você receberá notificações para lembrar delas.
                                         </p>
 
                                         <div class="slide__controls">
                                             <label for="s3" class="nav nav--prev">
+                                                <span class="sr-only">Slide anterior</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M15 5l-7 7 7 7" />
+                                                </svg>
+                                            </label>
+                                            <label for="s5" class="nav nav--next">
+                                                <span class="sr-only">Próximo slide</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- ===== Slide 5 ===== -->
+                                <li class="slide">
+                                    <div class="slide__media">
+                                        <img src="./assets/appTalhao.jpeg"
+                                            alt="Print da tela de talhão do aplicativo Sysgrano">
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <span class="slide__counter">05 / 08</span>
+                                        <h3 class="slide__title">Talhões</h3>
+                                        <p class="slide__text">
+                                            Gerencie cada talhão de forma simples, rápida e prática.
+                                        </p>
+
+                                        <div class="slide__controls">
+                                            <label for="s4" class="nav nav--prev">
+                                                <span class="sr-only">Slide anterior</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M15 5l-7 7 7 7" />
+                                                </svg>
+                                            </label>
+                                            <label for="s6" class="nav nav--next">
+                                                <span class="sr-only">Próximo slide</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- ===== Slide 6 ===== -->
+                                <li class="slide">
+                                    <div class="slide__media">
+                                        <img src="./assets/appFinanceiro-1.jpeg"
+                                            alt="Print da tela de finanças do aplicativo Sysgrano">
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <span class="slide__counter">06 / 08</span>
+                                        <h3 class="slide__title">Controle Financeiro</h3>
+                                        <p class="slide__text">
+                                            No aplicativo Sysgrano você pode organizar suas despesas por meio do
+                                            Relatório Financeiro. Controle seus gastos como pagamento de funcionários e
+                                            compra de insumos de forma rápida e acessível.
+                                        </p>
+
+                                        <div class="slide__controls">
+                                            <label for="s5" class="nav nav--prev">
+                                                <span class="sr-only">Slide anterior</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M15 5l-7 7 7 7" />
+                                                </svg>
+                                            </label>
+                                            <label for="s7" class="nav nav--next">
+                                                <span class="sr-only">Próximo slide</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- ===== Slide 7 ===== -->
+                                <li class="slide">
+                                    <div class="slide__media">
+                                        <img src="./assets/appArmazem-2.jpeg"
+                                            alt="Print da tela de armazém do aplicativo Sysgrano">
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <span class="slide__counter">07 / 08</span>
+                                        <h3 class="slide__title">Armazém Digital</h3>
+                                        <p class="slide__text">
+                                            Armazene no app os insumos e o café que possui, juntamente com a quantidade de cada um. Registre compras e tenha controle sobre tudo o que possui fácilmente.
+                                        </p>
+
+                                        <div class="slide__controls">
+                                            <label for="s6" class="nav nav--prev">
+                                                <span class="sr-only">Slide anterior</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M15 5l-7 7 7 7" />
+                                                </svg>
+                                            </label>
+                                            <label for="s8" class="nav nav--next">
+                                                <span class="sr-only">Próximo slide</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- ===== Slide 8 ===== -->
+                                <li class="slide">
+                                    <div class="slide__media">
+                                        <img src="./assets/appFornecedor.jpeg"
+                                            alt="Print da tela de fornecedores do aplicativo Sysgrano">
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <span class="slide__counter">08 / 08</span>
+                                        <h3 class="slide__title">Cadastro de Funcionários e Fornecedores</h3>
+                                        <p class="slide__text">
+                                            Cadastre seus funcionários e fornecedores para facilitar pagamentos e manter resgistrado com quem comprou insumos e muito mais.
+                                        </p>
+
+                                        <div class="slide__controls">
+                                            <label for="s7" class="nav nav--prev">
                                                 <span class="sr-only">Slide anterior</span>
                                                 <svg viewBox="0 0 24 24" aria-hidden="true">
                                                     <path d="M15 5l-7 7 7 7" />
@@ -194,6 +318,10 @@
                             <label for="s2"><span class="sr-only">Ir para o slide 2</span></label>
                             <label for="s3"><span class="sr-only">Ir para o slide 3</span></label>
                             <label for="s4"><span class="sr-only">Ir para o slide 4</span></label>
+                            <label for="s5"><span class="sr-only">Ir para o slide 5</span></label>
+                            <label for="s6"><span class="sr-only">Ir para o slide 6</span></label>
+                            <label for="s7"><span class="sr-only">Ir para o slide 7</span></label>
+                            <label for="s8"><span class="sr-only">Ir para o slide 8</span></label>
                         </div>
 
                     </div>
@@ -257,7 +385,10 @@
                 </p>
 
                 <div class="downloads">
-                    <a href="" class="download_btn">
+                    <a href="#download" class="download_btn">
+                        <p class="descricao">
+                            Em breve
+                        </p>
                         <img src="./assets/disponivel-google-play-badge.png" alt="">
                     </a>
                 </div>
