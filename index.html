@@ -25,9 +25,184 @@
         </div>
     </header>
     <main>
+
         <section class="hero" id="hero">hero</section>
-        <section class="recursos" id="recursos">recursos</section>
+
+        <section class="recursos" id="recursos">
+
+            <!--Parte do código da Cecília-->
+
+            <section class="showcase" id="destaques" aria-labelledby="showcase-title">
+                <div class="showcase__container">
+
+                    <div class="showcase__header">
+                        <h2 class="showcase__title" id="showcase-title">Algumas Telas do Aplicativo</h2>
+                    </div>
+
+                    <!--
+        ================= COMO ADICIONAR UM SLIDE =================
+        1) Copie um <input> e cole junto dos outros (com id novo: s5, s6...).
+        2) Copie um <li class="slide"> e ajuste o número, os textos e os
+           "for" dos botões (anterior e próximo).
+        3) Copie um <label> dos pontinhos (for="s5", etc.).
+        O CSS já está preparado para até 6 slides.
+        Para o primeiro slide aparecer ao abrir, deixe "checked" só no s1.
+      -->
+                    <div class="carousel" role="group" aria-roledescription="carrossel" aria-label="Destaques">
+
+                        <!-- Controles (inputs ocultos que guardam qual slide está ativo) -->
+                        <input class="carousel__input" type="radio" name="slides" id="s1" aria-label="Slide 1" checked>
+                        <input class="carousel__input" type="radio" name="slides" id="s2" aria-label="Slide 2">
+                        <input class="carousel__input" type="radio" name="slides" id="s3" aria-label="Slide 3">
+                        <input class="carousel__input" type="radio" name="slides" id="s4" aria-label="Slide 4">
+
+                        <!-- Slides -->
+                        <div class="carousel__viewport">
+                            <ul class="carousel__list">
+
+                                <!-- ===== Slide 1 ===== -->
+                                <li class="slide">
+                                    <div class="slide__media">
+                                        <!-- Troque o placeholder por: <img src="sua-imagem.jpg" alt="Descrição da imagem"> -->
+                                        <span class="slide__placeholder" aria-hidden="true">IMAGEM<br>vertical</span>
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <span class="slide__counter">01 / 04</span>
+                                        <h3 class="slide__title">Título do destaque 1</h3>
+                                        <p class="slide__text">
+                                            Escreva aqui uma descrição curta do destaque. Duas ou três frases já
+                                            são suficientes para apresentar a ideia.
+                                        </p>
+
+                                        <div class="slide__controls">
+                                            <label for="s4" class="nav nav--prev">
+                                                <span class="sr-only">Slide anterior</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M15 5l-7 7 7 7" />
+                                                </svg>
+                                            </label>
+                                            <label for="s2" class="nav nav--next">
+                                                <span class="sr-only">Próximo slide</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- ===== Slide 2 ===== -->
+                                <li class="slide">
+                                    <div class="slide__media">
+                                        <span class="slide__placeholder" aria-hidden="true">IMAGEM<br>vertical</span>
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <span class="slide__counter">02 / 04</span>
+                                        <h3 class="slide__title">Título do destaque 2</h3>
+                                        <p class="slide__text">
+                                            Escreva aqui uma descrição curta do destaque. Duas ou três frases já
+                                            são suficientes para apresentar a ideia.
+                                        </p>
+
+                                        <div class="slide__controls">
+                                            <label for="s1" class="nav nav--prev">
+                                                <span class="sr-only">Slide anterior</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M15 5l-7 7 7 7" />
+                                                </svg>
+                                            </label>
+                                            <label for="s3" class="nav nav--next">
+                                                <span class="sr-only">Próximo slide</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- ===== Slide 3 ===== -->
+                                <li class="slide">
+                                    <div class="slide__media">
+                                        <span class="slide__placeholder" aria-hidden="true">IMAGEM<br>vertical</span>
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <span class="slide__counter">03 / 04</span>
+                                        <h3 class="slide__title">Título do destaque 3</h3>
+                                        <p class="slide__text">
+                                            Escreva aqui uma descrição curta do destaque. Duas ou três frases já
+                                            são suficientes para apresentar a ideia.
+                                        </p>
+
+                                        <div class="slide__controls">
+                                            <label for="s2" class="nav nav--prev">
+                                                <span class="sr-only">Slide anterior</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M15 5l-7 7 7 7" />
+                                                </svg>
+                                            </label>
+                                            <label for="s4" class="nav nav--next">
+                                                <span class="sr-only">Próximo slide</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- ===== Slide 4 ===== -->
+                                <li class="slide">
+                                    <div class="slide__media">
+                                        <span class="slide__placeholder" aria-hidden="true">IMAGEM<br>vertical</span>
+                                    </div>
+
+                                    <div class="slide__content">
+                                        <span class="slide__counter">04 / 04</span>
+                                        <h3 class="slide__title">Título do destaque 4</h3>
+                                        <p class="slide__text">
+                                            Escreva aqui uma descrição curta do destaque. Duas ou três frases já
+                                            são suficientes para apresentar a ideia.
+                                        </p>
+
+                                        <div class="slide__controls">
+                                            <label for="s3" class="nav nav--prev">
+                                                <span class="sr-only">Slide anterior</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M15 5l-7 7 7 7" />
+                                                </svg>
+                                            </label>
+                                            <label for="s1" class="nav nav--next">
+                                                <span class="sr-only">Próximo slide</span>
+                                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                    <path d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Pontinhos (indicadores clicáveis) -->
+                        <div class="carousel__dots">
+                            <label for="s1"><span class="sr-only">Ir para o slide 1</span></label>
+                            <label for="s2"><span class="sr-only">Ir para o slide 2</span></label>
+                            <label for="s3"><span class="sr-only">Ir para o slide 3</span></label>
+                            <label for="s4"><span class="sr-only">Ir para o slide 4</span></label>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+
         <section class="porque" id="porque">porque</section>
+
         <section class="parcerias" id="parcerias" aria-labelledby="partners-title">
             <div class="partners__container">
 
@@ -71,6 +246,7 @@
 
             </div>
         </section>
+
         <section class="baixar" id="download">
             <div class="apresentacao">
                 <h1>Tudo o que você precisa para gerenciar a sua fazenda, desde o plantio até a venda do seu
@@ -81,15 +257,15 @@
                 </p>
 
                 <div class="downloads">
-                    <a class="botao botao-principal" href="" target="_blank" rel="noopener">
-                        <span class="play-icon" aria-hidden="true"></span>
-                        <span><strong>Baixar aplicativo</strong></span>
+                    <a href="" class="download_btn">
+                        <img src="./assets/disponivel-google-play-badge.png" alt="">
                     </a>
                 </div>
 
             </div>
 
         </section>
+
         <section class="manual" id="manual" aria-labelledby="manual-title">
             <div class="manual__container">
                 <h2 class="manual__title" id="manual-title">Manual de Instruções do App</h2>
@@ -99,6 +275,7 @@
                 <a href="#" class="btn">Acessar Manual de Instruções</a>
             </div>
         </section>
+
     </main>
     <footer>
         <p>Email para contato:

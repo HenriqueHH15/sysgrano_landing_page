@@ -11,6 +11,7 @@
   --card-bg:  #FBF8F3;
   --radius: 20px;
   --shadow: 0 10px 30px rgba(75, 46, 27, .10);
+  --speed: .55s;
 }
 
 *, *::before, *::after {
@@ -71,6 +72,255 @@ header img{
     text-decoration-line: underline; 
     color: #36471F;
     font-size: 15.5px;
+}
+
+/* ==================== CARROSSEL ==================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.showcase {
+  background: var(--bege);
+  padding: clamp(3.5rem, 8vw, 7rem) 1.25rem;
+}
+
+.showcase__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.showcase__header {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.showcase__title {
+  margin: 0;
+  color: var(--marrom);
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  line-height: 1.15;
+}
+
+.carousel { position: relative; }
+
+.carousel__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel__viewport {
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.carousel__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.carousel:has(.carousel__input:focus-visible) .carousel__viewport {
+  outline: 3px solid var(--rosa);
+  outline-offset: 4px;
+}
+
+.slide {
+  grid-area: 1 / 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem;
+
+  /* estado inativo */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(28px);
+  transition:
+    opacity var(--speed) ease,
+    transform var(--speed) ease,
+    visibility 0s linear var(--speed);
+}
+
+.slide__media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(100%, 300px);
+  aspect-ratio: 3 / 4;
+  margin: 0 auto;
+  background: var(--bege);
+  border-radius: 18px;
+  z-index: 1;
+}
+
+.slide__media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(12px, 12px);
+  border: 3px solid var(--rosa);
+  border-radius: 18px;
+  z-index: -1;
+}
+
+.slide__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+}
+
+.slide__placeholder {
+  text-align: center;
+  color: var(--verde);
+  font-weight: 700;
+  letter-spacing: .15em;
+  font-size: .9rem;
+  line-height: 1.8;
+}
+
+.slide__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slide__counter {
+  margin-bottom: .75rem;
+  color: var(--verde);
+  font-weight: 700;
+  letter-spacing: .12em;
+  font-size: .85rem;
+}
+
+.slide__title {
+  margin: 0 0 .75rem;
+  color: var(--marrom);
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  line-height: 1.2;
+}
+
+.slide__text {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  opacity: .88;
+}
+
+.slide__controls {
+  display: flex;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+.nav {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--marrom);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--marrom);
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.nav svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav--next { background: var(--marrom); color: var(--bege); }
+
+.nav:hover { background: var(--rosa); border-color: var(--rosa); color: #fff; transform: scale(1.06); }
+.nav:active { transform: scale(.96); }
+
+.carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: .6rem;
+  margin-top: 1.5rem;
+}
+
+.carousel__dots label {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--marrom);
+  opacity: .3;
+  cursor: pointer;
+  transition: width .3s ease, opacity .3s ease, background .3s ease;
+}
+
+.carousel__dots label:hover { opacity: .6; }
+
+/* ========= Slide ativo =========
+   Para cada slide existe uma regra que o torna visível
+   e destaca o pontinho correspondente.
+   Já preparado para até 6 slides. */
+#s1:checked ~ .carousel__viewport .slide:nth-child(1),
+#s2:checked ~ .carousel__viewport .slide:nth-child(2),
+#s3:checked ~ .carousel__viewport .slide:nth-child(3),
+#s4:checked ~ .carousel__viewport .slide:nth-child(4),
+#s5:checked ~ .carousel__viewport .slide:nth-child(5),
+#s6:checked ~ .carousel__viewport .slide:nth-child(6) {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition-delay: 0s;
+}
+
+#s1:checked ~ .carousel__dots label:nth-child(1),
+#s2:checked ~ .carousel__dots label:nth-child(2),
+#s3:checked ~ .carousel__dots label:nth-child(3),
+#s4:checked ~ .carousel__dots label:nth-child(4),
+#s5:checked ~ .carousel__dots label:nth-child(5),
+#s6:checked ~ .carousel__dots label:nth-child(6) {
+  width: 34px;
+  background: var(--rosa);
+  opacity: 1;
+}
+
+@media (min-width: 640px) {
+  .slide { padding: 2rem; }
+  .slide__media { width: min(100%, 340px); }
+}
+
+@media (min-width: 900px) {
+  .slide {
+    grid-template-columns: 340px 1fr;
+    gap: clamp(2.5rem, 6vw, 5rem);
+    padding: 3rem clamp(2rem, 5vw, 4rem);
+  }
+
+  .slide__media { width: 100%; margin: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+  .slide { transform: none; }
 }
 
 /* ==================== PARCERIAS ==================== */
@@ -258,52 +508,18 @@ h1 span {
   margin-top: 38px;
 }
 
-.botao {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex: 0 1 340px;
-  min-width: 320px;
-  min-height: 100px;
-  padding: 28px 36px;
-  border: 1px solid #3E3B37;
+.download_btn{
   border-radius: 7px;
-  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.botao-principal {
-  background: #4B2E1B;
-  color: white;
+.download_btn img{
+  height: 80px;
 }
 
-.botao:hover {
+.download_btn:hover{
   transform: scale(1.06);
-  background: #C97C7C;
-  color: #3E3B37;
   box-shadow: 0 12px 24px rgba(62, 59, 55, 0.22);
-}
-
-.botao small,
-.botao strong {
-  display: block;
-}
-
-.botao small {
-  font-size: 13px;
-}
-
-.botao strong {
-  margin-top: 4px;
-  font-size: 25px;
-}
-
-.play-icon {
-  display: block;
-  flex: 0 0 42px;
-  width: 42px;
-  height: 42px;
-  background: conic-gradient(from 225deg, #00A4EF 0 25%, #7FBA00 25% 48%, #FFB900 48% 70%, #F25022 70% 100%);
-  clip-path: polygon(8% 0, 100% 50%, 8% 100%);
 }
 
 @media (max-width: 700px) {
