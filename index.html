@@ -4,12 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sysgrano</title>
+    <title>Sysgrano | Gestão Inteligente para o Cafeicultor</title>
+    <meta name="description"
+        content="Sysgrano: o app que ajuda o cafeicultor a gerenciar lavoura, safra e produtividade na palma da mão.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/logo_sem_nome_4x4.png" type="image/x-icon">
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <img src="./assets/logo_sem_nome_4x4.png" alt="logo do Sysgrano">
@@ -24,13 +32,179 @@
             <a href="#manual">Manual de Uso</a>
         </div>
     </header>
+
     <main>
 
-        <section class="hero" id="hero">hero</section>
+        <section class="hero" id="hero">
+            <div class="container hero__content">
+
+                <div class="hero__text">
+
+                    <h1 class="hero__title">
+                        A gestão do ciclo da safra <span>na palma da mão</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Com o Sysgrano você controla talhões, safra, custos e colheita em um só lugar,
+                        com mais organização, menos papel e decisões muito mais seguras.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#recursos" class="btn btn--outline btn--lg">Conhecer recursos</a>
+                    </div>
+
+                </div>
+
+                <div class="hero__media">
+                    <div class="hero__image-wrapper">
+                        <img src="./assets/appHomeCelular.png" alt="Tela inicial do app Sysgrano">
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         <section class="recursos" id="recursos">
 
-            <!--Parte do código da Cecília-->
+            <section class="vantagens">
+                <div class="container">
+
+                    <div class="section-header">
+                        <span class="section-header__tag">Principais Recursos do Sysgrano</span>
+                        <h2 class="section-header__title">
+                            Solução completa e especialista para a <span>cafeicultura</span>
+                        </h2>
+                        <p class="section-header__subtitle">
+                            Do plantio à venda, o Sysgrano reúne em um só lugar tudo o que o produtor
+                            precisa para decidir melhor e produzir com mais rentabilidade.
+                        </p>
+                    </div>
+
+                    <div class="vantagens__list">
+
+                        <article class="vantagem-card">
+                            <!-- Ícones SVG (traço, cor da marca). Troque por outros se preferir. -->
+                            <span class="vantagem-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                    <polyline points="16 7 22 7 22 13" />
+                                </svg>
+                            </span>
+                            <div class="vantagem-card__body">
+                                <h3 class="vantagem-card__title">Venda no momento certo</h3>
+                                <p class="vantagem-card__text">
+                                    Com o acompanhamento sempre atualizado, o produtor identifica os melhores
+                                    momentos para fazer a venda do seu café.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="vantagem-card">
+                            <span class="vantagem-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    <path d="m7.5 4.27 9 5.15" />
+                                    <path
+                                        d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                                    <path d="m3.3 7 8.7 5 8.7-5" />
+                                    <path d="M12 22V12" />
+                                </svg>
+                            </span>
+                            <div class="vantagem-card__body">
+                                <h3 class="vantagem-card__title">Controle de estoque</h3>
+                                <p class="vantagem-card__text">
+                                    Acompanhe tudo o que entra e sai da propriedade, evitando perdas e
+                                    compras sem necessidade.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="vantagem-card">
+                            <span class="vantagem-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    <rect width="16" height="20" x="4" y="2" rx="2" />
+                                    <line x1="8" x2="16" y1="6" y2="6" />
+                                    <line x1="16" x2="16" y1="14" y2="18" />
+                                    <path d="M16 10h.01" />
+                                    <path d="M12 10h.01" />
+                                    <path d="M8 10h.01" />
+                                    <path d="M12 14h.01" />
+                                    <path d="M8 14h.01" />
+                                    <path d="M12 18h.01" />
+                                    <path d="M8 18h.01" />
+                                </svg>
+                            </span>
+                            <div class="vantagem-card__body">
+                                <h3 class="vantagem-card__title">Cálculo de gastos</h3>
+                                <p class="vantagem-card__text">
+                                    O produtor consegue saber exatamente quanto custa produzir o seu café.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="vantagem-card">
+                            <span class="vantagem-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                                    <path
+                                        d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                                    <path d="m9 14 2 2 4-4" />
+                                </svg>
+                            </span>
+                            <div class="vantagem-card__body">
+                                <h3 class="vantagem-card__title">Acompanhamento de tarefas</h3>
+                                <p class="vantagem-card__text">
+                                    Saiba o que fazer no dia a dia: poda, adubação, colheita e secagem,
+                                    tudo organizado em um só lugar.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="vantagem-card">
+                            <span class="vantagem-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    <path d="M3 3v18h18" />
+                                    <path d="M18 17V9" />
+                                    <path d="M13 17V5" />
+                                    <path d="M8 17v-3" />
+                                </svg>
+                            </span>
+                            <div class="vantagem-card__body">
+                                <h3 class="vantagem-card__title">Histórico de safras</h3>
+                                <p class="vantagem-card__text">
+                                    Compare o rendimento de cada talhão a cada colheita para entender quais
+                                    manejos trouxeram melhor resultado e ajustar o planejamento futuro.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="vantagem-card">
+                            <span class="vantagem-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                                    <path d="M10 9H8" />
+                                    <path d="M16 13H8" />
+                                    <path d="M16 17H8" />
+                                </svg>
+                            </span>
+                            <div class="vantagem-card__body">
+                                <h3 class="vantagem-card__title">Relatórios automáticos</h3>
+                                <p class="vantagem-card__text">
+                                    Gere seus relatórios de forma rápida e precisa, a fim de mostrar os resultados
+                                    obtidos em cada etapa.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+            </section>
 
             <section class="showcase" id="destaques" aria-labelledby="showcase-title">
                 <div class="showcase__container">
@@ -258,7 +432,9 @@
                                         <span class="slide__counter">07 / 08</span>
                                         <h3 class="slide__title">Armazém Digital</h3>
                                         <p class="slide__text">
-                                            Armazene no app os insumos e o café que possui, juntamente com a quantidade de cada um. Registre compras e tenha controle sobre tudo o que possui fácilmente.
+                                            Armazene no app os insumos e o café que possui, juntamente com a quantidade
+                                            de cada um. Registre compras e tenha controle sobre tudo o que possui
+                                            fácilmente.
                                         </p>
 
                                         <div class="slide__controls">
@@ -289,7 +465,8 @@
                                         <span class="slide__counter">08 / 08</span>
                                         <h3 class="slide__title">Cadastro de Funcionários e Fornecedores</h3>
                                         <p class="slide__text">
-                                            Cadastre seus funcionários e fornecedores para facilitar pagamentos e manter resgistrado com quem comprou insumos e muito mais.
+                                            Cadastre seus funcionários e fornecedores para facilitar pagamentos e manter
+                                            resgistrado com quem comprou insumos e muito mais.
                                         </p>
 
                                         <div class="slide__controls">
@@ -329,7 +506,48 @@
             </section>
         </section>
 
-        <section class="porque" id="porque">porque</section>
+        <section class="escolher" id="porque">
+            <div class="container escolher__content">
+
+                <div class="escolher__media">
+                    <div class="escolher__image-wrapper">
+                        <!-- Espaço reservado. Para colocar a sua imagem, apague a div abaixo e use: -->
+                        <img src="./assets/pexels-aleinad-_0222-90235912-13802102.jpg"
+                            alt="Imagem de um cafeicultor em uma lavoura">
+                        <!-- <div class="escolher__placeholder" aria-hidden="true"></div> -->
+                    </div>
+                </div>
+
+                <div class="escolher__text">
+                    <span class="section-header__tag">Por que escolher o Sysgrano</span>
+                    <h2 class="escolher__title">
+                        Inteligência e eficiência na gestão <span>cafeeira</span> ao alcance das suas mãos
+                    </h2>
+                    <p class="escolher__subtitle">
+                        O Sysgrano foi desenvolvido por estudantes de TSI do Ifes – Campus Santa Teresa, com apoio da
+                        Fapes e do
+                        Incaper,
+                        para auxiliar o cafeicultor na gestão da propriedade. O aplicativo permite registrar tarefas de
+                        campo,
+                        organizar
+                        um calendário de manejo com atividades como adubação, poda, pulverização, colheita e secagem,
+                        além de
+                        registrar
+                        compras de insumos e acompanhar os preços da saca de café. Assim, o produtor consegue planejar
+                        as atividades
+                        da
+                        lavoura, acompanhar sua rotina e identificar melhores momentos para comercializar sua produção,
+                        reunindo
+                        informações
+                        importantes em um só lugar.
+
+                    </p>
+
+                    <a href="#download" class="btn btn--primary btn--lg">Baixar o app</a>
+                </div>
+
+            </div>
+        </section>
 
         <section class="parcerias" id="parcerias" aria-labelledby="partners-title">
             <div class="partners__container">
@@ -408,14 +626,61 @@
         </section>
 
     </main>
+
     <footer>
+        <div class="container">
+
+            <div class="footer__top">
+
+                <div class="footer__brand">
+                    <a href="#hero">
+                        <img src="./assets/logo_sem_nome_4x4.png" alt="logo do Sysgrano">
+                        <span class="logo__text">Sys<strong>grano</strong></span>
+                    </a>
+                    <p>Tecnologia simples e feita sob medida para levar mais controle e rentabilidade ao cafeicultor.
+                    </p>
+                </div>
+
+                <div class="footer__col">
+                    <h2 class="footer__title">Navegação</h2>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#recursos">Recursos do app</a></li>
+                        <li><a href="#porque">Por que usar o Sysgrano?</a></li>
+                        <li><a href="#parcerias">Parcerias</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#manual">Manual de instruções</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h2 class="footer__title">Redes sociais</h2>
+                    <ul class="footer__social">
+                        <li><a href="https://www.instagram.com/sysgrano/" target="_blank" aria-label="Instagram">Instagram<img src="./assets/logo-instagram.svg" alt="logo do instagram"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2026 Sysgrano. Todos os direitos reservados.</p>
+                <div class="footer__legal">
+                    <a href="#">Termos de uso</a>
+                    <a href="#">Política de privacidade</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- <footer>
         <p>Email para contato:
             projetogestaocafeeira@gmail.com</p>
         <p>Sysgrano - 2026</p>
         <a href="https://www.instagram.com/sysgrano/" target="_blank">
             <img src="./assets/logo-instagram.svg" alt="logo do instagram">
         </a>
-    </footer>
+    </footer> -->
+
 </body>
 
 </html>
